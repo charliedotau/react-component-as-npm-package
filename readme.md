@@ -6,6 +6,18 @@ This repo is entirely informed by this [wonderful DailyJS article](https://mediu
 
 This demo skips the first workflow discussed in the article.
 
+## Test Component
+
+As per the article the test component is highly trivial:
+
+    /*** src/index.js   ***/
+    import React from 'react';
+    import './styles.css';
+    const MyComponent = () => (
+        <h1>Hello from My Component</h1>
+    );
+    export default MyComponent;
+
 ## Installation
 
 The package isn't published to the `npm repo`. It can be installed directly from Github like so
