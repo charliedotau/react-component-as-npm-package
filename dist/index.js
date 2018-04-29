@@ -8,14 +8,17 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactFontawesome = require('react-fontawesome');
+var _reactGiphySelect = require('react-giphy-select');
 
-var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
+var _reactGiphySelect2 = _interopRequireDefault(_reactGiphySelect);
+
+require('react-giphy-select/lib/styles.css');
 
 require('./styles.css');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+/*** src/index.js   ***/
 var MyComponent = function MyComponent() {
     return _react2.default.createElement(
         'div',
@@ -25,7 +28,12 @@ var MyComponent = function MyComponent() {
             null,
             'Hello from My Component'
         ),
-        _react2.default.createElement(_reactFontawesome2.default, { name: 'rocket' })
+        _react2.default.createElement(
+            'p',
+            null,
+            'here are some gifs'
+        ),
+        _react2.default.createElement(_reactGiphySelect2.default, null)
     );
-}; /*** src/index.js   ***/
+};
 exports.default = MyComponent;
